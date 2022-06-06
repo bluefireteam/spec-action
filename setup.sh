@@ -8,5 +8,5 @@ echo "Installing Spec $version..."
 dart pub global activate spec $version
 
 if [ "$run_tests" != "false" ]; then
-  dart pub global run spec
+  dart pub global run spec_cli:main
 fi
