@@ -5,7 +5,7 @@ run_bootstrap=$2
 
 echo "Installing Spec $version..."
 
-dart pub global activate spec $version
+dart pub global activate spec_cli $version
 
 if [ "$run_tests" != "false" ]; then
   dart pub global run spec_cli:main
