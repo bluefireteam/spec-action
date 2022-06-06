@@ -1,0 +1,18 @@
+name: Spec action
+description: Setup and run Spec in your GitHub workflow
+author: Lukas Klingsbo
+branding:
+  icon: check
+  color: purple
+inputs:
+  spec-version:
+    description: 'The Spec version to make available on the path (default: latest)'
+    required: false
+  run-tests:
+    description: 'Whether Spec should run the tests directly or not (default: true)'
+    required: false
+runs:
+  using: composite
+  steps:
+    - run: $GITHUB_ACTION_PATH/setup.sh "${{ inputs.spec-version }}" "${{ inputs.run-tests }}"
+      shell: bash
