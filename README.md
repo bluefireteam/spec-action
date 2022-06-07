@@ -15,7 +15,7 @@ can activate spec.
 steps:
 - uses: actions/checkout@v2
 - uses: subosito/flutter-action@v2
-- uses: bluefireteam/spec-action@v1
+- uses: bluefireteam/spec-action@v2
 ```
 
 
@@ -25,7 +25,7 @@ steps:
 steps:
 - uses: actions/checkout@v2
 - uses: dart-lang/setup-dart@v1
-- uses: bluefireteam/spec-action@v1
+- uses: bluefireteam/spec-action@v2
 ```
 
 
@@ -47,7 +47,7 @@ version like this `'>=1.2.0 < 1.3.0'` which would allow any version between
 steps:
 - uses: actions/checkout@v2
 - uses: subosito/flutter-action@v2
-- uses: bluefireteam/spec-action@v1
+- uses: bluefireteam/spec-action@v2
   with:
     spec-version: '1.2.0'
 ```
@@ -59,7 +59,7 @@ it to run set `run-tests: false`.
 steps:
 - uses: actions/checkout@v2
 - uses: subosito/flutter-action@v2
-- uses: bluefireteam/spec-action@v1
+- uses: bluefireteam/spec-action@v2
   with:
     run-tests: false
 ```
