@@ -13,9 +13,9 @@ can activate spec.
 
 ```yaml
 steps:
-- uses: actions/checkout@v2
+- uses: actions/checkout@v3
 - uses: subosito/flutter-action@v2
-- uses: bluefireteam/spec-action@v2
+- uses: bluefireteam/spec-action@v3
 ```
 
 
@@ -23,9 +23,9 @@ steps:
 
 ```yaml
 steps:
-- uses: actions/checkout@v2
+- uses: actions/checkout@v3
 - uses: dart-lang/setup-dart@v1
-- uses: bluefireteam/spec-action@v2
+- uses: bluefireteam/spec-action@v3
 ```
 
 
@@ -45,9 +45,9 @@ version like this `'>=1.2.0 < 1.3.0'` which would allow any version between
 
 ```yaml
 steps:
-- uses: actions/checkout@v2
+- uses: actions/checkout@v3
 - uses: subosito/flutter-action@v2
-- uses: bluefireteam/spec-action@v2
+- uses: bluefireteam/spec-action@v3
   with:
     spec-version: '1.2.0'
 ```
@@ -57,9 +57,9 @@ it to run set `run-tests: false`.
 
 ```yaml
 steps:
-- uses: actions/checkout@v2
+- uses: actions/checkout@v3
 - uses: subosito/flutter-action@v2
-- uses: bluefireteam/spec-action@v2
+- uses: bluefireteam/spec-action@v3
   with:
     run-tests: false
 ```
